@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="icon" type="img" href="logopag.webp">
+    <style>
+        body {
+            font-family: "Roboto Slab", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            background-image: linear-gradient(#343232a0, #1b1818aa),
+                image-set("oscura.jpg");
+            background-size: cover;
+            background-position: auto;
+            background-attachment: fixed;
+        }
+
+        body::-webkit-scrollbar {
+            background-color: #030562;
+            width: 10px;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: goldenrod;
+            border-radius: 5px;
+            border-right: 2px solid #030562;
+        }
+
+        .sidebar_nav {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #00559f;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidebar_nav::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .sidebar_nav::-webkit-scrollbar-thumb {
+            background-color: goldenrod;
+            border-radius: 5px;
+            border-right: 2px solid #00559f;
+        }
+
+        .sidebar_nav a {
+            padding: 16px;
+            text-decoration: none;
+            font-size: 20x;
+            color: #fff;
+            display: block;
+
+        }
+
+        .sidebar_nav a:hover {
+            color: #ffffff;
+            font-weight: 700;
+            background-color: #030562;
+            border-radius: 10px;
+            text-align: center;
+            /* Alineación a la izquierda */
+        }
+
+        .sidebar_nav i {
+            margin-right: 5px;
+        }
+
+        .contetn_main {
+            margin-left: 160px;
+            font-size: 22px;
+            padding: 0 10px;
+        }
+
+        .contetn_main p {
+            text-align: justify;
+        }
+
+        .contetn_header {
+            margin-left: 160px;
+            font-size: 22px;
+            padding: 0 10px;
+        }
+
+        .contetn_header p {
+            text-align: justify;
+        }
+
+        .contetn_footer {
+            margin-left: 160px;
+            font-size: 22px;
+            padding: 0 10px;
+        }
+
+        .contetn_footer p {
+            text-align: center;
+        }
+
+        .topbar_nav {
+            background-color: #2a5368ba;
+            overflow: hidden;
+        }
+
+
+        /* Estilos para los enlaces */
+        .topbar_nav a {
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        /* Alinea solo el enlace "Inicio" a la izquierda */
+        .topbar_nav a:first-child {
+            float: left;
+        }
+
+        /* Alinea los demás enlaces a la derecha */
+        .topbar_nav a:not(:first-child) {
+            float: right;
+        }
+
+        /* Cambia el color de fondo al pasar el mouse */
+        .topbar_nav a:hover {
+            background-color: #ddd;
+            color: rgb(62, 84, 255);
+        }
+
+        /* Estilo para el enlace activo */
+        .topbar_nav a.active {
+            background-color: #030562;
+            color: rgb(255, 255, 255);
+        }
+
+        article {
+            margin-left: 10px;
+            margin-right: 10px;
+
+        }
+
+        section {
+            font-size: medium;
+            padding: 40px;
+            margin-top: 20px;
+            background-color: rgba(3, 10, 39, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(3, 10, 39, 0.7);
+        }
+
+        footer {
+            background-color: #2a5368;
+            padding: 40px;
+            text-align: center;
+            color: white;
+            /* Asegúrate de que el texto sea visible sobre el fondo oscuro */
+            clear: both;
+            /* Esto evita que el contenido flotante afecte tu pie de página */
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="contetn_header">
+        <nav class="topbar_nav">
+            <a href="index.html" class="active">Inicio</a>
+            <a href="https://tecnmsaltillo-my.sharepoint.com/:f:/g/personal/l22050646_saltillo_tecnm_mx/ElmnItpAlctGmEhF9baQXNMBa6ve9JX5gwmkuY5hcQKK3Q?e=oJxfFV"
+                target="_blank">Practicas</a>
+            <a href="Unidad4.html">Unidad 4</a>
+            <a href="Unidad3.html">Unidad 3</a>
+            <a href="Unidad2.html">Unidad 2</a>
+            <a href="Unidad1.html">Unidad 1</a>
+        </nav>
+    </header>
+
+
+    <nav class="sidebar_nav">
+        <a href="https://saltillo.tecnm.mx/" target="_blank">Sitio oficial del Tecnológico de Saltillo</a>
+        <a href="https://www.facebook.com/TecNMcampusSaltillo " target="_blank">Pagina de Facebook de la institución</a>
+        <a href="https://www.facebook.com/csc.its" target="_blank">Pagina de Facebook del capitulo de sistemas</a>
+    </nav>
+
+    <main class="contetn_main">
+        <article>
+            <br>
+            <marquee style="margin-right: 300px; margin-left: 300px; font-size: 40px; font-family: Lilita One, sans-serif;
+           font-weight: 400;font-style: normal; color: #ffffff; display:flex; align-items: center;"><b>Inicio</b>
+            </marquee>
+
+            <div style="display: flex; justify-content: space-between;">
+                <div class="card" style="width: 18rem; font-size: medium;
+                    padding: 20px;
+                    margin-top: 20px;
+                    background-color: rgba(3, 10, 39, 0.7);
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px rgba(3, 10, 39, 0.7);
+                    display: flex; flex-direction: column; align-items: center;">
+                    <img style="display: block; margin: 0 auto; height: 250px; width: 250px; padding: auto; padding-top: 20px; padding-bottom: 10px;"
+                        src="yo.enc" class="card-img-top" alt="Jose Mares">
+                    <br>
+                    <p class="card-text" style="text-align: left; font-size: medium; color: #fff; ">
+                        Mi nombre es José Juan Mares Dávila y soy estudiante de segundo año de la carrera en Ingeniería
+                        en Sistemas
+                        Computacionales.
+                    </p>
+                </div>
+
+                <section id="Acerca" style="flex: 1; margin-left: 20px;">
+                    <h2 style="color: darkgoldenrod;">Dónde estudio</h2>
+                    <p style="color: #fff;">
+                        Estudio en el Instituto Tecnológico de Saltillo, una institución educativa ubicada en la
+                        ciudad
+                        de Saltillo, Coahuila. Este prestigioso instituto ofrece programas académicos en diversas
+                        áreas,
+                        y como estudiante, tengo la oportunidad de sumergirme en el aprendizaje, la investigación y
+                        el
+                        desarrollo profesional. La comunidad estudiantil y el ambiente en el campus hacen que mi
+                        experiencia sea enriquecedora y llena de oportunidades.
+                    </p>
+                    <img style="display: block; margin: 0 auto; height: 200px; width: 230px;" src="its.png" alt="its">
+                </section>
+            </div>
+            <section id="Acerca">
+                <h2 style="color: darkgoldenrod;">Acerca de mi página web</h2>
+                <p style="color: #fff;">
+                    <b>Bienvenidos a mi sitio sobre Arquitectura de Computadoras</b>
+                    <br><br>
+                    En este espacio, exploraremos los fundamentos y conceptos clave relacionados con la arquitectura
+                    de
+                    computadoras. Mi objetivo es proporcionar información clara y concisa para estudiantes,
+                    entusiastas y
+                    profesionales interesados en este emocionante campo.
+                </p>
+            </section>
+        </article>
+    </main>
+
+</body>
+<footer class="contetn_footer">
+    <img src="tcnm.png" alt="Logo tecnm" width="150px" height="150px"
+        style="margin-left: 5px; float:right; margin-top: 10px;">
+    <img src="its.png" alt="Logo Tec Saltillo" width="150px" height="150px"
+        style="margin-right: 5px; float: left; margin-top: 0px;">
+    <p>Derechos de autor &copy; 2024. Todos los derechos reservados.</p>
+    <br><br><br><br>
+</footer>
+
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 4</title>
+    <link rel="icon" type="img" href="logopag.webp">
+    <style>
+        body {
+            font-family: "Roboto Slab", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            background-image: linear-gradient(#343232a0, #1b1818aa),
+                image-set("oscura.jpg");
+            background-size: cover;
+            background-position: auto;
+            background-attachment: fixed;
+        }
+
+        body::-webkit-scrollbar {
+            background-color: #030562;
+            width: 10px;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: goldenrod;
+            border-radius: 5px;
+            border-right: 2px solid #030562;
+        }
+
+        .sidebar_nav {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #00559f;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidebar_nav::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .sidebar_nav::-webkit-scrollbar-thumb {
+            background-color: goldenrod;
+            border-radius: 5px;
+            border-right: 2px solid #00559f;
+        }
+
+        .sidebar_nav a {
+            padding: 16px;
+            text-decoration: none;
+            font-size: 20x;
+            color: #fff;
+            display: block;
+
+        }
+
+        .sidebar_nav a:hover {
+            color: #ffffff;
+            font-weight: 700;
+            background-color: #030562;
+            border-radius: 10px;
+            text-align: center;
+            /* Alineación a la izquierda */
+        }
+
+        .sidebar_nav i {
+            margin-right: 5px;
+        }
+
+        .contetn_main {
+            margin-left: 160px;
+            font-size: 22px;
+            padding: 0 10px;
+        }
+
+        .contetn_main p {
+            text-align: justify;
+        }
+
+        .contetn_header {
+            margin-left: 160px;
+            font-size: 22px;
+            padding: 0 10px;
+        }
+
+        .contetn_header p {
+            text-align: justify;
+        }
+
+        .contetn_footer {
+            margin-left: 160px;
+            font-size: 22px;
+            padding: 0 10px;
+        }
+
+        .contetn_footer p {
+            text-align: center;
+        }
+
+        .topbar_nav {
+            background-color: #2a5368ba;
+            overflow: hidden;
+        }
+
+
+        /* Estilos para los enlaces */
+        .topbar_nav a {
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        /* Alinea solo el enlace "Inicio" a la izquierda */
+        .topbar_nav a:first-child {
+            float: left;
+        }
+
+        /* Alinea los demás enlaces a la derecha */
+        .topbar_nav a:not(:first-child) {
+            float: right;
+        }
+
+        /* Cambia el color de fondo al pasar el mouse */
+        .topbar_nav a:hover {
+            background-color: #ddd;
+            color: rgb(62, 84, 255);
+        }
+
+        /* Estilo para el enlace activo */
+        .topbar_nav a.active {
+            background-color: #030562;
+            color: rgb(255, 255, 255);
+        }
+
+        article {
+            margin-left: 10px;
+            margin-right: 10px;
+
+        }
+
+        section {
+            font-size: medium;
+            padding: 40px;
+            margin-top: 20px;
+            background-color: rgba(3, 10, 39, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(3, 10, 39, 0.7);
+        }
+
+        footer {
+            background-color: #2a5368;
+            padding: 40px;
+            text-align: center;
+            color: white;
+            /* Asegúrate de que el texto sea visible sobre el fondo oscuro */
+            clear: both;
+            /* Esto evita que el contenido flotante afecte tu pie de página */
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="contetn_header">
+        <nav class="topbar_nav">
+            <a href="index.html" class="active">Inicio</a>
+            <a href="https://tecnmsaltillo-my.sharepoint.com/:f:/g/personal/l22050646_saltillo_tecnm_mx/ElmnItpAlctGmEhF9baQXNMBa6ve9JX5gwmkuY5hcQKK3Q?e=oJxfFV"
+                target="_blank">Practicas</a>
+            <a href="Unidad4.html">Unidad 4</a>
+            <a href="Unidad3.html">Unidad 3</a>
+            <a href="Unidad2.html">Unidad 2</a>
+            <a href="Unidad1.html">Unidad 1</a>
+        </nav>
+    </header>
+
+
+    <nav class="sidebar_nav">
+        <a href="#4.1">4.1</a>
+        <a href="#4.2">4.2</a>
+        <a href="#4.2.1">4.2.1</a>
+        <a href="#4.2.2">4.2.2</a>
+        <a href="#4.2.3">4.2.3</a>
+        <a href="#4.3">4.3</a>
+        <a href="#4.3.1">4.3.1</a>
+        <a href="#4.3.2">4.3.2</a>
+        <a href="#4.4">4.4</a>
+        <a href="#4.5">4.5</a>
+    </nav>
+
+    <main class="contetn_main">
+        <article>
+            <br>
+            <marquee style="margin-right: 300px; margin-left: 300px; font-size: 40px; font-family: Lilita One, sans-serif;
+            font-weight: 400;font-style: normal; color: #ffffff; ;"><b>Unidad 4.Aspectos basicos de la computacion
+                    paralela</b>
+            </marquee>
+            <section id="4.1">
+                <h2 style="color:darkgoldenrod">4.1 Aspectos básicos de la computación paralela</h2>
+                <p style="color: #fff;">La computación paralela se basa en la idea de dividir un problema en tareas más
+                    pequeñas y procesarlas de manera simultánea utilizando múltiples recursos de computación. Esto
+                    permite un procesamiento más rápido y eficiente en comparación con los enfoques secuenciales
+                    tradicionales. Algunos aspectos fundamentales de la computación paralela incluyen la sincronización
+                    de tareas, la comunicación entre procesos y la gestión de recursos.
+                </p>
+                <br>
+                <img style="display: block; margin: 0 auto; height: 200px; width: 300px;"
+                    src="aspectoscomputacionparalela.jpg" alt="aspectos basicos de la computacion paralela">
+            </section>
+            <section id="4.2">
+                <h2 style="color: darkgoldenrod;">4.2 Tipos de computación paralela</h2>
+                <p style="color: #fff;">Existen varios tipos de computación paralela que se utilizan en diferentes
+                    contextos y escenarios. Algunos de los enfoques más comunes incluyen el procesamiento paralelo a
+                    nivel de bit, a nivel de instrucción, a nivel de datos y a nivel de tarea. Estos enfoques se
+                    diferencian en cómo se dividen y procesan las tareas y los datos.
+                </p>
+            </section>
+            <section id="4.2.1">
+                <h2 style="color:darkgoldenrod;">4.2.1 Clasificación</h2>
+                <p style="color: #fff;">La clasificación de la computación paralela puede realizarse en función de la
+                    forma en que se dividen las tareas y los datos, así como de la forma en que se coordinan y comunican
+                    los procesos paralelos. Algunas clasificaciones comunes incluyen la computación paralela a nivel de
+                    bit, a nivel de instrucción, a nivel de datos y a nivel de tarea.
+                </p>
+                <img style="display: block; margin: 0 auto; height: 200px; width: 300px;" src="clasificacion.jpg"
+                    alt="clasificacion">
+            </section>
+            <section id="4.2.2">
+                <h2 style="color:darkgoldenrod;">4.2.2 Arquitectura de computadores secuenciales</h2>
+                <p style="color: #fff;">La arquitectura de computadores secuencial se refiere a los sistemas
+                    informáticos tradicionales en los que las instrucciones se ejecutan una tras otra en secuencia. Este
+                    tipo de arquitectura sigue siendo común en muchas computadoras personales y estaciones de trabajo.
+                </p>
+                <img style="display: block; margin: 0 auto; height: 200px; width: 300px;" src="arqsecuencial.png"
+                    alt="Arquitectura de computadores secuenciales">
+            </section>
+            <section id="4.2.3">
+                <h2 style="color:darkgoldenrod">4.2.3 Organización de direcciones de memoria</h2>
+                <p style="color: #fff;">
+                    La organización de direcciones de memoria se refiere a cómo se asignan y acceden a las direcciones
+                    de memoria en un sistema de computación paralela. Esto incluye consideraciones como la memoria
+                    compartida, la memoria distribuida y las técnicas de direccionamiento utilizadas para acceder a los
+                    datos en paralelo.
+                </p>
+                <img style="display: block; margin: 0 auto; height: 200px; width: 300px;" src="direccionesmemoria.gif"
+                    alt="Organización de direcciones de memoria">
+            </section>
+            <section id="4.3">
+                <h2 style="color:darkgoldenrod">4.3 Sistema de memoria compartida</h2>
+                <p style="color: #fff;">
+                    Los sistemas de memoria compartida son un enfoque de computación paralela en el que múltiples
+                    procesadores acceden a una misma área de memoria compartida. Esto permite a los procesadores
+                    compartir datos y comunicarse de manera eficiente. Dentro de los sistemas de memoria compartida,
+                    existen dos tipos principales de redes: las redes de medio compartida y las redes conmutadas.
+                </p>
+                <img style="display: block; margin: 0 auto;" src="memoriacompartida.jpeg"
+                    alt="Sistema de memoria compartida">
+            </section>
+            <section id="4.3.1">
+                <h2 style="color:darkgoldenrod">4.3.1 Redes de medio compartid</h2>
+                <p style="color: #fff;">Las redes de medio compartida son un tipo de arquitectura de memoria compartida
+                    en la que los procesadores se conectan físicamente a un bus compartido o a una red de interconexión.
+                    Los procesadores pueden leer y escribir en la memoria compartida a través de este medio compartido.
+                </p>
+                <section id="4.3.2">
+                    <h2 style="color:darkgoldenrod">4.3.2 Redes conmutadas</h2>
+                    <p style="color: #fff;">Las redes de medio compartida son un tipo de arquitectura de memoria
+                        compartida
+                        en la que los procesadores se conectan físicamente a un bus compartido o a una red de
+                        interconexión.
+                        Los procesadores pueden leer y escribir en la memoria compartida a través de este medio
+                        compartido.
+                    </p>
+                </section>
+                <section id="4.4">
+                    <h2 style="color:darkgoldenrod">4.4 Sistemas de memoria construida</h2>
+                    <p style="color: #fff;">Los sistemas de memoria construida son una forma de organización de la
+                        memoria en la computación paralela en la que cada procesador tiene su propia memoria local. Esto
+                        permite una mayor independencia entre los procesadores y reduce la necesidad de acceder a una
+                        memoria compartida.
+                </section>
+                <section id="4.5">
+                    <h2 style="color:darkgoldenrod">4.5 Casos de estudio</h2>
+                    <p style="color: #fff;">En el campo de la computación paralela, existen numerosos casos de estudio
+                        que han demostrado la eficacia y los beneficios de los enfoques paralelos en diferentes
+                        dominios. Algunos ejemplos incluyen el uso de computación paralela en simulaciones científicas,
+                        análisis de grandes conjuntos de datos, renderizado de gráficos y modelado de sistemas
+                        complejos.
+                    </p>
+                </section>
+        </article>
+    </main>
+
+</body>
+<footer class="contetn_footer">
+    <img src="tcnm.png" alt="Logo tecnm" width="150px" height="150px"
+        style="margin-left: 5px; float:right; margin-top: 10px;">
+    <img src="its.png" alt="Logo Tec Saltillo" width="150px" height="150px"
+        style="margin-right: 5px; float: left; margin-top: 0px;">
+    <p>Derechos de autor &copy; 2024. Todos los derechos reservados.</p>
+    <br><br><br><br>
+</footer>
+
+</html>

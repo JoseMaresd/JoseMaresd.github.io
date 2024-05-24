@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 3</title>
+    <link rel="icon" type="img" href="logopag.webp">
+    <style>
+        body {
+            font-family: "Roboto Slab", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            background-image: linear-gradient(#343232a0, #1b1818aa),
+                image-set("oscura.jpg");
+            background-size: cover;
+            background-position: auto;
+            background-attachment: fixed;
+        }
+
+        body::-webkit-scrollbar {
+            background-color: #030562;
+            width: 10px;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: goldenrod;
+            border-radius: 5px;
+            border-right: 2px solid #030562;
+        }
+
+        .sidebar_nav {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #00559f;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidebar_nav::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .sidebar_nav::-webkit-scrollbar-thumb {
+            background-color: goldenrod;
+            border-radius: 5px;
+            border-right: 2px solid #00559f;
+        }
+
+        .sidebar_nav a {
+            padding: 16px;
+            text-decoration: none;
+            font-size: 20x;
+            color: #fff;
+            display: block;
+
+        }
+
+        .sidebar_nav a:hover {
+            color: #ffffff;
+            font-weight: 700;
+            background-color: #030562;
+            border-radius: 10px;
+            text-align: center;
+            /* Alineación a la izquierda */
+        }
+
+        .sidebar_nav i {
+            margin-right: 5px;
+        }
+
+        .contetn_main {
+            margin-left: 160px;
+            font-size: 22px;
+            padding: 0 10px;
+        }
+
+        .contetn_main p {
+            text-align: justify;
+        }
+
+        .contetn_header {
+            margin-left: 160px;
+            font-size: 22px;
+            padding: 0 10px;
+        }
+
+        .contetn_header p {
+            text-align: justify;
+        }
+
+        .contetn_footer {
+            margin-left: 160px;
+            font-size: 22px;
+            padding: 0 10px;
+        }
+
+        .contetn_footer p {
+            text-align: center;
+        }
+
+        .topbar_nav {
+            background-color: #2a5368ba;
+            overflow: hidden;
+        }
+
+
+        /* Estilos para los enlaces */
+        .topbar_nav a {
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        /* Alinea solo el enlace "Inicio" a la izquierda */
+        .topbar_nav a:first-child {
+            float: left;
+        }
+
+        /* Alinea los demás enlaces a la derecha */
+        .topbar_nav a:not(:first-child) {
+            float: right;
+        }
+
+        /* Cambia el color de fondo al pasar el mouse */
+        .topbar_nav a:hover {
+            background-color: #ddd;
+            color: rgb(62, 84, 255);
+        }
+
+        /* Estilo para el enlace activo */
+        .topbar_nav a.active {
+            background-color: #030562;
+            color: rgb(255, 255, 255);
+        }
+
+        article {
+            margin-left: 10px;
+            margin-right: 10px;
+
+        }
+
+        section {
+            font-size: medium;
+            padding: 40px;
+            margin-top: 20px;
+            background-color: rgba(3, 10, 39, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(3, 10, 39, 0.7);
+        }
+
+        footer {
+            background-color: #2a5368;
+            padding: 40px;
+            text-align: center;
+            color: white;
+            /* Asegúrate de que el texto sea visible sobre el fondo oscuro */
+            clear: both;
+            /* Esto evita que el contenido flotante afecte tu pie de página */
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="contetn_header">
+        <nav class="topbar_nav">
+            <a href="index.html" class="active">Inicio</a>
+            <a href="https://tecnmsaltillo-my.sharepoint.com/:f:/g/personal/l22050646_saltillo_tecnm_mx/ElmnItpAlctGmEhF9baQXNMBa6ve9JX5gwmkuY5hcQKK3Q?e=oJxfFV"
+                target="_blank">Practicas</a>
+            <a href="Unidad4.html">Unidad 4</a>
+            <a href="Unidad3.html">Unidad 3</a>
+            <a href="Unidad2.html">Unidad 2</a>
+            <a href="Unidad1.html">Unidad 1</a>
+        </nav>
+    </header>
+
+
+    <nav class="sidebar_nav">
+        <a href="#3.1">3.1</a>
+        <a href="#3.1.1">3.1.1</a>
+        <a href="#3.1.2">3.1.2</a>
+        <a href="#3.1.3">3.1.3</a>
+        <a href="#3.1.4">3.1.4</a>
+        <a href="#3.1.5">3.1.5</a>
+        <a href="#3.1.6">3.1.6</a>
+        <a href="#3.1.7">3.1.7</a>
+        <a href="#3.1.8">3.1.8</a>
+        <a href="#3.2">3.2</a>
+        <a href="#3.2.1">3.2.1</a>
+        <a href="#3.2.2">3.2.2</a>
+        <a href="#3.2.3">3.2.3</a>
+        <a href="#3.3">3.3</a>
+        <a href="#3.3.1">3.3.1</a>
+        <a href="#3.3.2">3.3.2</a>
+        <a href="#3.3.3">3.3.3</a>
+        <br><br>
+    </nav>
+
+    <main class="contetn_main">
+        <article>
+            <br>
+            <marquee style="margin-right: 300px; margin-left: 300px; font-size: 40px; font-family: Lilita One, sans-serif;
+            font-weight: 400;font-style: normal; color: #ffffff; ;"><b>Unidad 3.Selección de componentes para ensamble
+                    de equipo de cómputo</b>
+            </marquee>
+            <section id="3.1">
+                <h2 style="color:darkgoldenrod">3.1 Chip set.</h2>
+                <p style="color: #fff;">Un chipset es el conjunto de circuitos integrados diseñados con base en la
+                    arquitectura de un procesador (en algunos casos, diseñados como parte integral de esa arquitectura),
+                    permitiendo que ese tipo de procesadores funcionen en una placa base. Sirven de puente de
+                    comunicación con el resto de componentes de la placa, como son la memoria, las tarjetas de
+                    expansión, los puertos USB, ratón, teclado, etc. Las placas base modernas suelen incluir dos
+                    integrados, denominados puente norte y puente sur, y suelen ser los circuitos integrados más grandes
+                    después de la GPU y el microprocesador. Las últimas placa base carecen de puente norte, ya que los
+                    procesadores de última generación lo llevan integrado. <br>
+                    Funcionamiento: El chipset es el que hace posible que la placa base funcione como eje del sistema,
+                    dando soporte a varios componentes e interconectándolos de forma que se comuniquen entre ellos
+                    haciendo uso de diversos buses. Es uno de los pocos elementos que tiene conexión directa con el
+                    procesador, gestiona la mayor parte de la información que entra y sale por el bus principal del
+                    procesador, del sistema de vídeo y muchas veces de la memoria RAM. En el caso de los computadores
+                    PC, es un esquema de arquitectura abierta que establece modularidad: el chipset debe tener
+                    interfaces estándar para los demás dispositivos. Esto permite escoger entre varios dispositivos
+                    estándar, por ejemplo, en el caso de los buses de expansión, algunas tarjetas madre pueden tener bus
+                    PCI-Express y soportar diversos tipos de tarjetas de distintos anchos de bus (1x, 8x, 16x).
+                </p>
+                <br>
+                <img style="display: block; margin: 0 auto; height: 200px; width: 300px;" src="chipset.jpg"
+                    alt="chipset">
+            </section>
+            <section id="3.1.1">
+                <h2 style="color: darkgoldenrod;">3.1.1 Unidad de procesamiento</h2>
+                <p style="color: #fff;">La unidad central de procesamiento (siglas en inglés Central Processing Unit) es
+                    el hardware dentro de una computadora u otros dispositivos programables. Su trabajo es interpretar
+                    las instrucciones de un programa informático mediante la realización de las operaciones básicas
+                    aritméticas, lógicas y externas (provenientes de la unidad de entrada/salida). Su diseño y avance ha
+                    variado notablemente desde su creación, aumentando su eficiencia y potencia, y reduciendo aspectos
+                    como el consumo de energía y el costo. <br>Los componentes de la CPU son: Unidad aritmético lógica
+                    (ALU): Realiza operaciones aritméticas y lógicas. Unidad de control (CU): Dirige el tráfico de
+                    información entre los registros de la CPU y conecta con la ALU las instrucciones extraídas de la
+                    memoria. Registros internos: No accesibles (de instrucción, de bus de datos y bus de dirección) y
+                    accesibles de uso específico (contador programa, puntero pila, acumulador, flags, etc.) o de uso
+                    general.
+                </p>
+                <br>
+                <img style="display: block; margin: 0 auto; height: 200px; width: 300px;" src="ucp.jpg" alt="cpu">
+            </section>
+            <section id="3.1.2">
+                <h2 style="color:darkgoldenrod;">3.1.2 Controlador del bus</h2>
+                <p style="color: #fff;">El controlador del bus se encarga de la frecuencia de funcionamiento y las
+                    señales de sincronismo, temporización y control. Está ubicado en un chip en la placa base. El bus es
+                    la vía a través de la que se van a transmitir y recibir todas las comunicaciones, tanto internas
+                    como externas, del sistema informático. El bus es solamente un dispositivo de transferencia de
+                    información entre los componentes conectados a él, no almacena información alguna en ningún momento.
+                    Los datos, en forma de señal eléctrica, sólo permanecen en el bus el tiempo que necesitan en
+                    recorrer la distancia entre los dos componentes implicados en la transferencia.
+                </p>
+                <img style="display: block; margin: 0 auto; height: 200px; width: 300px;" src="controladorbuses.png"
+                    alt="Controlador de buses">
+
+            </section>
+            <section id="3.1.3">
+                <h2 style="color:darkgoldenrod;">3.1.3 Puerta de entrada/salida</h2>
+                <p style="color: #fff;">Un puerto de E/S es un enchufe en una computadora al que se conecta un cable. El
+                    puerto conecta la CPU a un dispositivo periférico a través de una interfaz de hardware o a la red a
+                    través de una interfaz de red. En otras palabras, un puerto de E/S es un punto de conexión que actúa
+                    como interfaz entre la computadora y dispositivos externos como mouse, impresora, módem, etc. Estos
+                    son de dos tipos: Puerto interno: Conecta la placa base a dispositivos internos como unidad de disco
+                    duro, unidad de CD, módem interno, etc. Puerto externo: Conecta la placa base a dispositivos
+                    externos como módem, mouse, impresora, unidades flash, etc. <br>
+                    Tipos de puertos: Puerto serial: Los puertos seriales transmiten datos secuencialmente un bit a la
+                    vez. Por lo tanto, solo necesitan un
+                    cable para transmitir 8 bits. Sin embargo, también los hace más lentos. Los puertos serie suelen ser
+                    conectores macho de 9 o 25 pines. También se conocen como puertos COM (comunicación) o puertos
+                    RS323C. Puerto USB: USB son las siglas de Universal Serial Bus. Es el estándar de la industria para
+                    la conexión de datos digitales de corta distancia. <br>El puerto USB es un puerto estandarizado para
+                    conectar una variedad de dispositivos como impresora, cámara, teclado, altavoz, etc. Puerto PS/2:
+                    PS/2 son las siglas de Personal System/2. Es un puerto estándar hembra de 6 pines que se conecta al
+                    cable mini-DIN macho. IBM introdujo PS/2 para conectar el mouse y el teclado a las computadoras
+                    personales.
+                    <br><br>
+                    <img style="display: block; margin: 0 auto; height: 200px; width: 300px;" src="entradasalida.jpg"
+                        alt=" entrada /salida">
+                    <br>Este puerto ahora está casi obsoleto, aunque algunos sistemas compatibles con IBM
+                    pueden
+                    tener este puerto. Puerto de infrarrojos: El puerto de infrarrojos es un puerto que permite el
+                    intercambio inalámbrico de datos en un radio de 10 m. Dos dispositivos que tienen puertos
+                    infrarrojos se colocan uno frente al otro para que los haces de luces infrarrojas se puedan utilizar
+                    para compartir datos. Puerto Bluetooth: Bluetooth es una especificación de telecomunicaciones que
+                    facilita la conexión inalámbrica entre teléfonos, computadoras y otros dispositivos digitales a
+                    través de una conexión inalámbrica de corto alcance. <br>El puerto Bluetooth permite la
+                    sincronización
+                    entre dispositivos habilitados para Bluetooth. Puerto FireWire: FireWire es el estándar de interfaz
+                    de Apple Computer para permitir la comunicación de alta velocidad mediante bus serie. También se
+                    llama IEEE 1394 y se usa principalmente para dispositivos de audio y video como videocámaras
+                    digitales.
+                </p>
+            </section>
+            <section id="3.1.4">
+                <h2 style="color:darkgoldenrod">3.1.4 Controlador de interrupciones</h2>
+                <p style="color: #fff;">
+                    El controlador de interrupciones es un módulo que tiene por función gestionar las interrupciones de
+                    entrada/salida para el procesador. Esto ahorra diseñar lógica y añadir patitas al procesador.
+                    También proporciona flexibilidad porque permite idealmente, gestionar un número ilimitado señales de
+                    interrupción (favoreciendo la expansión del sistema de entrada/salida). <br><br>
+                    Ciclo de reconocimiento de interrupción
+                    Tras la activación de una línea IR, el controlador activa la salida INTR señalándole a la CPU la
+                    existencia de una interrupción activada.
+                    Al recibir la señal, el procesador da un pulso en su salida INTA indicando que comienza un ciclo de
+                    reconocimiento de interrupción.
+                    Al recibir el controlador el pulso por su entrada INTA comienza a arbitrar las interrupciones
+                    recibidas y selecciona la más prioritaria.
+                    Se emite un segundo pulso por la línea INTA del procesador (o controlador de bus) que utiliza el
+                    controlador para depositar en el bus el vector correspondiente a la interrupción de mayor prioridad.
+                    El procesador obtiene la dirección de la rutina de interrupción a partir de este dato y salta a
+                    ella. Almacena el registro de flags y la dirección de retorno, deshabilita las interrupciones y
+                    comienza a ejecutar la rutina.
+                </p>
+                <br>
+                <img style="display: block; margin: 0 auto; height: 200px; width: 300px;"
+                    src="controlinterrupciones.jpg" alt="Controlador de interrupciones">
+            </section>
+            <section id="3.1.5">
+                <h2 style="color:darkgoldenrod">3.1.5 Controlador de Acceso Directo a Memoria</h2>
+                <p style="color: #fff;">
+                    ("DMA Controller"), que permite realizar estos intercambios sin apenas intervención del procesador.
+                    En los XT estaba integrado en un chip 8237A que proporcionaba 4 canales de 8 bits (puede mover solo
+                    1 Byte cada vez); sus direcciones de puerto son 000–00Fh. Posteriormente en los AT se instalaron dos
+                    de estos integrados y las correspondientes líneas auxiliares en el bus de control. En contra de lo
+                    que podría parecer, el resultado no fue disponer de 8 canales, porque el segundo controlador se
+                    colgó en “Cascada” de la línea 4 del primero. <br> Los canales del El mecanismo de acceso directo a
+                    memoria está controlado por un chip específico, el DMAC segundo DMAC está asignado a las direcciones
+                    0C0–0DFh y son de 16 bits. Pueden mover 2 Bytes (de posiciones contiguas) cada vez. Cada canal tiene
+                    asignada una prioridad para el caso de recibirse simultáneamente varias peticiones (los números más
+                    bajos tienen prioridad más alta). Pueden ser utilizados por cualquier dispositivo que los necesite
+                    (suponiendo naturalmente que esté diseñado para soportar este modo de operación). Cada sistema los
+                    asigna de forma arbitraria, pero hay algunos cuya asignación es estándar.
+                </p>
+                <br>
+                <img style="display: block; margin: 0 auto;" src="controladormemo.png"
+                    alt="controlador de acceso a memoria">
+            </section>
+            <section id="3.1.6">
+                <h2 style="color:darkgoldenrod">3.1.6 Circuitos de Temporización</h2>
+                <p style="color: #fff;">El circuito electrónico que más se utiliza tanto en la industria como en
+                    circuitería comercial, es el circuito temporizador o de retardo, dentro de la categoría de
+                    temporizadores, cabe destacar el más económico y también menos preciso consistente en una
+                    resistencia y un condensador, a partir de aquí se puede contar con un sinfín de opciones. Un
+                    temporizador básicamente consiste en un elemento que se activa o desactiva después de un tiempo
+                    preestablecido. De esta manera podemos determinar el parámetro relacionado con el tiempo que ha de
+                    transcurrir para que el circuito susceptible de temporizarse, se detenga o empiece a funcionar o
+                    simplemente cierre un contacto o lo abra. <br> <br>
+                    <img style="display: block; margin: 0 auto; height: 200px; width: 300px;" src="circtemp.jpg"
+                        alt="Circuitos de temporización"> <br>
+                    Se encuentra en la placa base de la PC y que es capaz de
+                    mantener una cuenta de tiempo basada en el reloj de la computadora. Puede usarse para calcular el
+                    intervalo entre dos mediciones de tiempo o para generar pausas. Este chip tiene la capacidad de
+                    realizar diferentes funciones de conteo. Es útil para medir el tiempo que dura cierto proceso o para
+                    mantener actualizadas la hora del día y la fecha si se deja la PC conectada y encendida.
+                </p>
+            </section>
+            <section id="3.1.7">
+                <h2 style="color:darkgoldenrod">3.1.7 Circuitos de Control</h2>
+                <p style="color: #fff;">Es una red secuencial que acepta un código que define la operación que se va a
+                    ejecutar y luego prosigue a través de una secuencia de estados, generando una correspondiente
+                    secuencia de señales control. Estas señales de control incluyen el control de lectura-escritura y
+                    señales de dirección de memoria válida en el bus de control del sistema. Otras señales generadas por
+                    el controlador se conectan a la ALU y a los registros internos del procesador para regular el flujo
+                    de información en el procesador y desde los buses de dirección y de datos del sistema.
+                </p>
+                <img style="display: block; margin: 0 auto; height: 200px; width: 300px;" src="circuitocontrol.jpg"
+                    alt="Circuitos de control">
+            </section>
+            <section id="3.1.8">
+                <h2 style="color:darkgoldenrod">3.1.8 Controladores de Video</h2>
+                <p style="color: #fff;">La tarjeta de video, (también llamada controlador de video), es un componente
+                    electrónico requerido para generar una señal de video que se manda a una pantalla de video por medio
+                    de un cable. La tarjeta de video se encuentra normalmente en la placa de sistema de la computadora o
+                    en una placa de expansión. La tarjeta gráfica reúne toda la información que debe visualizarse en
+                    pantalla y actúa como interfaz entre el procesador y el monitor; la información es enviada a éste
+                    por la placa luego de haberla recibido a través del sistema de buses. <br>
+                    <img style="display: block; margin: 0 auto; height: 200px; width: 300px;" src="controlvideo.webp"
+                        alt="controlador de video"><br>
+                    Una tarjeta gráfica se
+                    compone, básicamente, de un controlador de video, de la memoria de pantalla o RAM video, y el
+                    generador de caracteres, y en la actualidad también poseen un acelerador de gráficos. El controlador
+                    de video va leyendo a intervalos la información almacenada en la RAM video y la transfiere al
+                    monitor en forma de señal de video; el número de veces por segundo que el contenido de la RAM video
+                    es leído y transmitido al monitor en forma de señal de video se conoce como frecuencia de refresco
+                    de la pantalla.
+                </p>
+            </section>
+            <section id="3.2">
+                <h2 style="color:darkgoldenrod">3.2 Aplicaciones</h2>
+                <p style="color: #fff;">En informática, un periférico de entrada/salida o E/S (en inglés: input/output o
+                    I/O) es aquel tipo de dispositivo periférico de un computador capaz de interactuar con los elementos
+                    externos a ese sistema de forma bidireccional, es decir, que permite tanto que sea ingresada
+                    información desde un sistema externo, como emitir información a partir de ese sistema. Los
+                    Dispositivos Periféricos de entrada son todos aquellos dispositivos que permiten introducir datos o
+                    información en una computadora para que esta los procese u ordene.
+                    <br><br>
+                    Funciones: <br>
+                    Un periférico de E/S es el que se utiliza para ingresar (E) datos a la computadora, y luego de ser
+                    procesados por la unidad central de procesamiento (CPU), genera la salida (S) de información. Su
+                    función es leer o grabar, permanente o virtualmente, todo aquello que se haga con la computadora,
+                    para que pueda ser utilizado por los usuarios u otros sistemas.
+                    <br><br>
+                    Tipos: <br>
+                    Dispositivos o periféricos de comunicación entre computadoras <br>
+                    Dispositivos de almacenamiento de datos
+                </p>
+            </section>
+            <section id="3.2.1">
+                <h2 style="color:darkgoldenrod">3.2.1 Entrada/Salida</h2>
+                <p style="color: #fff;">Conforme la tecnología avanza, más datos se van generando, por lo que es
+                    necesario contar con un almacenamiento eficiente para poder guardar toda esa información y acceder a
+                    ellos. El almacenamiento de datos ha cambiado mucho, desde los sistemas de disco, que muy
+                    probablemente se sigan utilizando, pero de una forma más digital: hoy se encuentran conectados a una
+                    red y son definidos por un software.
+                    <br><br>
+                    Almacenamiento en Sistemas Informáticos: <br>
+                    Un dispositivo de almacenamiento es un hardware que se utiliza principalmente para almacenar datos.
+                    Cada computadora de escritorio, computadora portátil, tablet y smartphone tendrán algún tipo de
+                    dispositivo de almacenamiento en su interior y también puedes obtener unidades de almacenamiento
+                    externo independientes que se pueden utilizar en varios dispositivos.
+                    <br><br>
+                    Tipos de Almacenamiento:<br>
+                    Unidades de discos duros (HDD) <br>
+                    Discos de estado sólido (SSD)
+                </p>
+            </section>
+            <section id="3.2.2">
+                <h2 style="color:darkgoldenrod">3.2.2 Almacenamiento</h2>
+                <p style="color: white;">El almacenamiento en una PC se refiere a la capacidad de guardar y recuperar
+                    información, archivos, aplicaciones y otros datos. Es uno de los componentes más importantes de una
+                    computadora. Aquí tienes algunas opciones comunes de almacenamiento:</p>
+                <ul style="color: white;">
+                    <li>Unidad de disco duro (HDD): <br>Estas unidades utilizan discos magnéticos
+                        giratorios para almacenar datos. Son más lentas que las SSD pero ofrecen mayor capacidad a un
+                        costo más bajo.</li>
+                    <li>Unidad de estado sólido (SSD): <br>Las SSD no tienen partes móviles y son más
+                        rápidas que las HDD. Aunque son más costosas, ofrecen un rendimiento superior y tiempos de carga
+                        más rápidos.</li>
+                    <li>Almacenamiento híbrido (HDD + SSD): <br>Algunas computadoras combinan ambos tipos
+                        de almacenamiento para obtener un equilibrio entre capacidad y velocidad.</li>
+                </ul>
+                <img style="display: block; margin: 0 auto; height: 200px; width: 300px;" src="almacenamiento.webp"
+                    alt="Almacenamiento">
+            </section>
+            <section id="3.2.3">
+                <h2 style="color:darkgoldenrod">3.2.3 Fuentes de alimentacion</h2>
+                <p style="color: white;">Una fuente de alimentación es un componente esencial de cualquier dispositivo
+                    electrónico ya que es ella quien se encarga de darle vida. En cualquier equipo, por pequeño que sea,
+                    siempre hay una fuente de alimentación, aunque no la veamos. En los ordenadores de sobremesa, la
+                    fuente de alimentación se encuentra generalmente en la parte inferior de la torre (en cajas antiguas
+                    se encuentra en la superior), y muchas cajas de ordenador optan por incorporar un compartimento para
+                    separarla del resto y ya de paso ocultar todos los cables salientes de ella. <br>Una fuente de
+                    alimentación sirve para dar energía a un dispositivo electrónico.
+                    <br><br>
+                    <img style="display: block; margin: 0 auto; height: 250px; width: 300px;" src="fuentepoder.webp"
+                        alt="fuente de poder"><br>
+                    Siguiendo con el tema de los
+                    ordenadores de sobremesa, la fuente de alimentación da energía a la placa base, CPU, tarjetas
+                    gráficas, HDDs, SSDs, ventiladores, lectores de CDs. En resumen, alimenta a todo lo que necesite
+                    energía, para ello hace uso de diferentes tipos de cables. Las fuentes de alimentación proporcionan
+                    energía a los SSD y HDD mediante conectores SATA de energía, y a los ventiladores mediante
+                    conectores molex de 3 o 4 pines o bien mediante la propia placa base (que es alimentada con el
+                    conector de 24 pines ATX). De esta manera, todos los componentes reciben energía de la fuente de
+                    alimentación.
+                </p>
+            </section>
+            <section id="3.3">
+                <h2 style="color:darkgoldenrod">3.3 Ambientes de servicio</h2>
+                <p style="color: white;">El negocio de proveer servicios de datos es mucho más complejo que la forma en
+                    la que se dan los tradicionales servicios, los primeros requieren de nuevos conocimientos y modelos
+                    de negocio, que con frecuencia se termina involucrando o necesitando la colaboración de terceras
+                    empresas. Por lo que se hace necesario que los operadores tradicionales transformen su negocio para
+                    ofrecer los servicios de datos con los niveles de servicio que el mercado exige.
+                </p>
+            </section>
+            <section id="3.3.1">
+                <h2 style="color:darkgoldenrod">3.3.1 Negocios</h2>
+                <p style="color: white;">Definitivamente, la tecnología en general ha sido la causa principal y la
+                    acción más directa para la transformación del trabajo de las organizaciones en la posguerra del
+                    siglo XX. Tanto los bienes de capital "duros" (computadores, teléfonos, videos, facsímiles,
+                    grabadoras, etc.), como los programas y sistemas de información y comunicación en general, han
+                    incrementado enormemente la productividad y eficiencia de las organizaciones. Tenemos como ejemplos
+                    los siguientes: bases de datos en redes de todo orden y topología, sistemas de reservaciones en
+                    aerolíneas, sistemas de contabilidad y nóminas, archivos clínicos en centros de salud, sistemas de
+                    conmutación electrónica y un sin número de otras aplicaciones a procesos administrativos.
+                </p>
+            </section>
+            <section id="3.3.2">
+                <h2 style="color:darkgoldenrod">3.3.2 Industrias</h2>
+                <p style="color: white;">La industrialización de los servicios de tecnología de información va a
+                    redefinir el mercado en términos de como las organizaciones evalúan, compran y seleccionan los
+                    servicios y como los vendedores desarrollan y establecen precios de los servicios. Para lograr esta
+                    estandarización, se requiere un enfoque hacia las soluciones genéricas y esto debe ser
+                    responsabilidad de los proveedores, que deben de desarrollar, operar y administrar el resultado de
+                    estos genéricos de TI. Aunque los servicios de TI están en proceso de madurez, la madurez de la
+                    industria se ha incrementado en aspectos evidentes, como la forma en que los servicios son
+                    implementados y administrados.
+                </p>
+            </section>
+            <section id="3.3.3">
+                <h2 style="color:darkgoldenrod">3.3.3 Comercio Electronico</h2>
+                <p style="color: white;">
+                    El desarrollo de estas tecnologías y de las telecomunicaciones ha hecho que los intercambios de
+                    datos crezcan a niveles extraordinarios, simplificándose cada vez más y creando nuevas formas de
+                    comercio, y en este marco se desarrolla el Comercio Electrónico. Se considera “Comercio Electrónico”
+                    al conjunto de aquellas transacciones comerciales y financieras realizadas a través del
+                    procesamiento y la transmisión de información, incluyendo texto, sonido e imagen.
+            </section>
+        </article>
+    </main>
+
+</body>
+<footer class="contetn_footer">
+    <img src="tcnm.png" alt="Logo tecnm" width="150px" height="150px"
+        style="margin-left: 5px; float:right; margin-top: 10px;">
+    <img src="its.png" alt="Logo Tec Saltillo" width="150px" height="150px"
+        style="margin-right: 5px; float: left; margin-top: 0px;">
+    <p>Derechos de autor &copy; 2024. Todos los derechos reservados.</p>
+    <br><br><br><br>
+</footer>
+
+</html>
