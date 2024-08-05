@@ -7,7 +7,36 @@
     <title>Inicio</title>
     <link rel="icon" type="img" href="logopag.webp">
     <style>
+        @media (max-width: 767px) {
+    .desktop{
+        display: none;
+    }
+    .tablet{
+        display: none;
+    }
+ 
+}
+/* Tableta */
+@media (min-width: 768px) and (max-width: 990px) {
+    .desktop{
+        display: none;
+    }
+    .movil{
+        display: none;
+    }
+}
+/** Escritorio **/
+@media (min-width: 991px) {
+   
+    .tablet{
+        display: none;
+    }
+    .movil{
+        display: none;
+    }
+}
         body {
+            
             font-family: "Roboto Slab", serif;
             font-optical-sizing: auto;
             font-style: normal;
@@ -164,6 +193,7 @@
             clear: both;
             /* Esto evita que el contenido flotante afecte tu pie de página */
         }
+        
     </style>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -177,6 +207,17 @@
 </head>
 
 <body>
+    <div class="resolucion">
+        <div class="desktop">
+            <h1>esto es una pc</h1>
+        </div>
+        <div class="tablet">
+            <h1>esto es una tablet</h1>
+        </div>
+        <div class="movil">
+            <h1> esto es un celular </h1>
+        </div>
+    </div>
 
     <header class="contetn_header">
         <nav class="topbar_nav">
